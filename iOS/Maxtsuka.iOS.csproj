@@ -102,10 +102,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="LoginFlow\" />
+    <Folder Include="WebFlow\" />
+    <Folder Include="MapFlow\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Resources\MenuFlowController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -117,6 +121,22 @@
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFlow\LoginVuewController.cs" />
+    <Compile Include="LoginFlow\LoginVuewController.designer.cs">
+      <DependentUpon>LoginVuewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapFlow\MapViewController.cs" />
+    <Compile Include="MapFlow\MapViewController.designer.cs">
+      <DependentUpon>MapViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebFlow\WebViewController.cs" />
+    <Compile Include="WebFlow\WebViewController.designer.cs">
+      <DependentUpon>WebViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFlowController.cs" />
+    <Compile Include="MenuFlowController.designer.cs">
+      <DependentUpon>MenuFlowController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
